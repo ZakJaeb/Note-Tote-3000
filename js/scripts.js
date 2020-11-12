@@ -1,1 +1,13 @@
-console.log("is this thing on?")
+window.onload = function() {
+    document.getElementById('inputArea').onsubmit = function() {
+      var list = document.getElementById(this.getAttribute('data-list')); // only needed if more than one form or list   
+      var listItem = document.createElement("li");
+      var inputItem = this.inputItem;
+      listItem.innerText = inputItem.value;
+      list.appendChild(listItem);
+      inputItem.select();
+      inputItem.focus();
+      return false; // stop submission
+    }
+    document.getElementById("inputItem").focus();
+  }

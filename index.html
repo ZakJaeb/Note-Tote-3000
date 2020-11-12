@@ -12,15 +12,19 @@
     </header>
     <main>
         <!--Input new note here-->
-        <div id="inputArea">
-            <input type="text" class="form">
-            <button>Add Note</button>
-        </div>
+        <form id="inputArea" data-list="notes">
+            <input type="text" id="inputItem" placeholder="Enter a new note beech!">
+            <input type="submit" value="Add Note">
+        </form>
         
         <!--Active notes will show up here-->
         <div id="noteArea">
             <h3>Notes:</h3>
+            <ul id="notes">
+                <br>
+                <br>
 
+            </ul>
         </div>
     </main>
     <footer>
