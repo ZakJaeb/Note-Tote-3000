@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+footer {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#inputArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+}
+
+#noteArea {
+    display: flex;
+    justify-content: center;
+    padding-right: 10%;
+}
